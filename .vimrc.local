@@ -1,0 +1,19 @@
+map <Leader>n <esc>:tabprevious<CR>
+map <leader>m <esc>:tabnext<CR>
+map <C-j> <C-w>j:
+map <C-k> <C-w>k
+map <C-h> <C-w>h
+let g:NERDTreeWinSize = 50
+map <C-l> <C-w>l
+map ; :
+map 9 0
+map 0 $
+map 7 &
+
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+set lazyredraw
+set noswapfile
+silent function! OSX()
+colorscheme githubset rnu
+
